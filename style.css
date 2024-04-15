@@ -61,6 +61,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 0 64px;
+  font-size: 16px;
 }
 
 .grid-item-3 {
@@ -85,6 +86,7 @@ main {
 
 h1 {
   font-family: "Montserrat";
+  font-size: 32px;
 }
 
 .products-container {
@@ -118,6 +120,7 @@ h1 {
   justify-content: space-between;
   padding: 0 12px;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   margin: 8px 0 32px 0;
 }
 
@@ -137,6 +140,7 @@ footer {
   background-color: #212429;
   color: #ffffff;
   padding: 0 24px;
+  font-size: 16px;
 }
 
 footer > div {
