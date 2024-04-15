@@ -1,0 +1,174 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #212429;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 100%;
+} /* 16px */
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+  margin: 0 20px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  max-width: 1280px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  place-content: center;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 32px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  z-index: 8;
+  background-color: #ffffff;
+  border-bottom: 1px solid #212429;
+}
+
+.grid-item-1 {
+  display: flex;
+  padding: 0 24px;
+  justify-content: center;
+}
+
+.grid-item-2 {
+  display: flex;
+  justify-content: center;
+  padding: 0 64px;
+}
+
+.grid-item-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item-3 > img {
+  margin: 0 25px;
+}
+
+main {
+  max-width: 1280px;
+  margin: 90px auto;
+  padding: 16px;
+}
+
+h1 {
+  font-family: "Montserrat";
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.product {
+  margin: 0 16px 0 16px;
+}
+
+.product > img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+}
+
+.pie-de-foto {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-family: "Montserrat", sans-serif;
+  margin: 8px 0 32px 0;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 16px;
+  width: 100%;
+  height: 110px;
+  margin-bottom: -8px;
+  background-color: #212429;
+  color: #ffffff;
+  padding: 0 24px;
+}
+
+footer > div {
+  display: flex;
+}
+
+footer > div > span {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+  margin-right: 16px;
+}
+
+footer > hr {
+  display: none;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 920px) {
+  header {
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .grid-item-2 {
+    display: none;
+  }
+
+  .grid-item-3 {
+    display: none;
+  }
+
+  .product {
+    margin: 0 auto 24px auto;
+  }
+
+  footer {
+    display: block;
+    height: 470px;
+    justify-content: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    margin-bottom: -8;
+    font-weight: bold;
+  }
+
+  footer > hr {
+    display: block;
+    width: 100%;
+    margin-bottom: 48px;
+    margin-top: 16px;
+  }
+}
