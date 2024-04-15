@@ -16,7 +16,14 @@ html {
 a {
   text-decoration: none;
   color: var(--secondary);
+  border-radius: 20px;
+  padding: 5px;
   margin: 0 20px;
+}
+
+a:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 header {
@@ -45,6 +52,11 @@ header {
   justify-content: center;
 }
 
+.grid-item-1:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
 .grid-item-2 {
   display: flex;
   justify-content: center;
@@ -54,6 +66,11 @@ header {
 .grid-item-3 {
   display: flex;
   justify-content: center;
+}
+
+.grid-item-3 img:hover {
+  cursor: pointer;
+  transform: scale(1.4);
 }
 
 .grid-item-3 > img {
@@ -81,6 +98,13 @@ h1 {
 
 .product {
   margin: 0 16px 0 16px;
+  transition: 1s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.15);
+  transition: 1s ease-in-out;
+  cursor: pointer;
 }
 
 .product > img {
