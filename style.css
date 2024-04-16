@@ -148,10 +148,6 @@ footer {
   margin-right: 16px;
 }
 
-footer > hr {
-  display: none;
-}
-
 /* MEDIA QUERY */
 
 @media screen and (max-width: 920px) {
